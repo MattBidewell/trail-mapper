@@ -54,11 +54,12 @@
       background: #2d4a2d;
       color: white;
       border: none;
-      padding: 8px 18px;
+      padding: 10px 20px;
       border-radius: 6px;
       cursor: pointer;
       font-size: 14px;
       font-family: inherit;
+      min-height: 44px;
     }
     .btn:hover { background: #3d6a3d; }
     .map-container {
@@ -69,6 +70,12 @@
       overflow: hidden;
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
       border: 2px solid #c8d8c8;
+    }
+    @media (max-width: 640px) {
+      .page { padding: 12px; gap: 12px; }
+      h1 { font-size: 22px; }
+      .upload-zone { padding: 16px 14px; }
+      .map-container { height: calc(100dvh - 230px); min-height: 280px; border-radius: 8px; }
     }
     #map { height: 100%; width: 100%; }
     .legend {
@@ -105,9 +112,9 @@
 
     <div class="upload-zone" id="upload-zone">
       <input type="file" id="file-input" accept=".gpx" multiple style="display:none">
-      <p>Drop GPX files here or click to browse</p>
+      <p>Add GPX files to your map</p>
       <button class="btn" id="browse-btn">Browse files</button>
-      <p class="hint">Supports multiple .gpx files &mdash; add more at any time</p>
+      <p class="hint">Drag &amp; drop or tap to browse &mdash; multiple files supported</p>
       <p class="route-count" id="route-count" style="display:none"></p>
     </div>
 
