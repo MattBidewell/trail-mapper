@@ -2,6 +2,14 @@
   "name": "trail-mapper",
   "compatibility_date": "2026-02-22",
   "assets": {
-    "directory": "./"
+    "directory": "./",
+    "exclude": [
+      "server.ts",
+      "tsconfig.json",
+      "package.json",
+      "bun.lock",
+      "README.md",
+      "wrangler.jsonc",
+    ],
   }
 }
