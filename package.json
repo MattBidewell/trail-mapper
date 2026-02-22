@@ -1,0 +1,14 @@
+{
+  "name": "trail-mapper",
+  "version": "1.0.0",
+  "description": "Frontend app to visualize GPX trails on an interactive map",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run server.ts"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "keywords": ["gpx", "leaflet", "map", "trail", "gps"],
+  "license": "MIT"
+}
